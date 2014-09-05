@@ -8,6 +8,9 @@ package com.bot;
 public class Config {
     private static String hostName = "irc.freenode.net";
     private static String nickName = "JPhoeBot";
+    private static Boolean messageLog = true;
+    private static String logFile = "log.txt";
+
     private static String[] channels = {
             "##JPhoenix"
     };
@@ -19,7 +22,12 @@ public class Config {
     public static String getNickName() {
         return nickName;
     }
+
     public static String[] getChannels() {
         return channels;
     }
+
+    public static Boolean getMessageLog() { return messageLog; }
+
+    public static String getLogFile() { return logFile; }
 }
